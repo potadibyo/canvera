@@ -105,7 +105,7 @@ class Photographers extends CI_Controller {
                 if($row) {
                     $this->session->set_userdata('name', $row->name);
                     $this->session->set_userdata('id', $row->id);
-                    $this->session->set_flashdata('success_msg','You are now logged in...');
+                    $this->session->set_flashdata('success_msg','Hello, '. $this->session->userdata('name') .'...  You are now logged in...');
                     redirect(base_url()."home");
                 } else {
                     $this->session->set_flashdata('err_msg','Invalid Username or Password! Try Again...');                    

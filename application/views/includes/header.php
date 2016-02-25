@@ -45,11 +45,10 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <?php if($this->session->userdata('name') != null) { ?>
-                        <li><a href="<?php echo base_url(); ?>">Create a Photobook</a></li>                        
-                        <li><a href="<?php echo base_url(); ?>">Share your Photobooks</a></li>
+                        <li><a href="<?php echo base_url(); ?>photobooks/create">Create a Photobook</a></li>                        
+                        <li><a href="<?php echo base_url(); ?>">My Photobooks</a></li>
                         <li><a href="<?php echo base_url(); ?>">Popular Photobooks</a></li>
                         <?php } else { ?>
-                        <!--<li><a href="<?php echo base_url(); ?>photographers">Photographer's Zone</a></li>-->
                         <li><a href="<?php echo base_url(); ?>home/about">About Us</a></li>
                         <li><a href="<?php echo base_url(); ?>home/contact">Contact Us</a></li>
                         <?php } ?>

@@ -24,3 +24,4 @@ class Category extends CI_Model {
         return $query->result();
     }
 }
+?>
